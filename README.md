@@ -1,71 +1,84 @@
-# Wifi_Attack
+ 🚀 **Advanced Wireless Attack Suite**
 
-Advanced Wireless Attack Suite 🚀
-A Bash-based toolkit for wireless pentesting, allowing users to perform Wi-Fi offensive scanning, DDoS attacks, and handshake decryption. This script simplifies complex wireless attacks using tools like airmon-ng, airodump-ng, and aircrack-ng.
+This Bash script is a comprehensive tool for wireless penetration testing, focusing on scanning, attacking, and decrypting Wi-Fi networks. It automates common tasks in wireless security assessments and provides an interactive, user-friendly interface with vibrant visual elements.
 
-Features
+---
+ 🔑 **Key Features:**
 
-✅ Easy-to-use interface with ASCII art and color-coded prompts.
+1. **Wi-Fi Scanning and Enumeration:**  
+   Detect nearby wireless networks and capture handshakes for further analysis.
 
-✅ Supports the following wireless pentesting methods:
+2. **Wi-Fi Deauthentication (DDoS) Attacks:**  
+   Launch deauthentication attacks on targeted BSSIDs to disconnect clients and force handshake captures.
 
-Wi-Fi Scanning and Enumeration: Locate and identify Wi-Fi networks.
+3. **Decrypt CAP Files:**  
+   Use brute-force attacks with a password dictionary to crack captured handshakes using `aircrack-ng`.
 
-DDoS Attacks: Deauthenticate devices from target access points.
+4. **User-Friendly Interface:**  
+   Enjoy colorful ASCII art and enhanced user prompts, powered by `toilet`, `lolcat`, and `cowsay`.
 
-Decrypt CAP Files: Crack Wi-Fi handshakes using dictionary attacks.
+---
 
-✅ Automated network interface setup and monitor mode activation.
+🛠️ **Requirements:**
 
-✅ Save and manage captured handshake files efficiently.
+- **Operating System:** Linux (tested on Kali Linux)
+- **Dependencies:**  
+   - `aircrack-ng`  
+   - `toilet`  
+   - `lolcat`  
+   - `cowsay`  
+   
+   Install dependencies using:
+   ```bash
+   sudo apt-get install aircrack-ng toilet lolcat cowsay figlet
+   ```
 
-✅ Continuous attack mode for multiple targets.
+---
+ 📋 **Usage Instructions:**
 
-Prerequisites
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/wifi-attack.git
+   cd wifi-attack-suite
+   ```
 
-Linux/Unix Environment with Bash.
+2. **Make the script executable:**
+   ```bash
+   chmod +x wifi_attack.sh
+   ```
 
-Install the following tools:
+3. **Run the script with root privileges:**
+   ```bash
+   sudo ./wifi_attack.sh
+   ```
 
-aircrack-ng suite:
+---
+**Example Workflow:**
 
-sudo apt-get install aircrack-ng
+1. **Choose an attack method:**
+   - **[1] Wi-Fi Scanning and Enumeration:** Capture handshakes from target networks.
+   - **[2] Wi-Fi DDoS Attack:** Launch a deauthentication attack on the specified BSSID.
+   - **[3] Decrypt CAP Files:** Crack Wi-Fi passwords using a dictionary attack.
 
-toilet (for ASCII art) and lolcat (for color effects):
+2. **Follow the prompts:**  
+   Enter the network interface, BSSID, and additional details as required.
 
-sudo apt-get install toilet
+3. **Monitor progress:**  
+   Outputs are displayed in real-time, and results are saved in the current directory.
 
-gem install lolcat
+---
 
-figlet (for banners):
+ 🧠 **Important Notes:**
 
-sudo apt-get install figlet
+- Ensure you run the script as **root**.
+- Use this tool **responsibly and legally**. Unauthorized access to networks is illegal.
+- Recommended for educational purposes and authorized penetration testing only.
 
-cowsay (optional, for fun messages):
+---
 
-sudo apt-get install cowsay
+🎨 **Special Thanks:**  
+Created with passion by **Dharani**  
+🔗 Contact: dharanishankar1234@gmail.com  
 
-How to Use
-
-Clone the repository:
-
-git clone https://github.com/dharani003/Wifi_Attack.git
-
-cd Wifi_Attack
-
-Make the script executable:
-
-chmod +x wifi_attack.sh
-
-Run the script as root:
-
-sudo ./wifi_attack.s
-
-Disclaimer
-This script is for educational purposes only. Unauthorized use of this tool to compromise wireless networks is illegal and unethical. Ensure you have explicit permission before running any attack.
-
-Contributions
-Contributions are welcome! If you’d like to improve the script, add new features, or fix bugs, feel free to fork the repository and create a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+--- 
+⚠️ **Disclaimer:** Use responsibly and ethically. Unauthorized use for malicious purposes is strictly prohibited.
